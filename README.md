@@ -1,0 +1,1 @@
+# **Recriando a interface da Netflix** 📺## Descrição### O objetivo desse código foi recriar a interface da Netflix. Para deixar o projeto diferente fiz uma versão de Halloween onde todos os conteúdos disponiveis são com a temática halloween e terror. 🎃 #### Em sua construção foram usados HTML5,  CSS3, JavaScript  e JQuery para fazer o carrossel de imagens.

@@ -1,0 +1,128 @@
+/* altera as cores principais da pagina */
+:root{
+  --vermelho:#ff6400;
+  --preto: #141414;
+}
+/* retirando as formatações padrões */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+  /*utilizando o root para definiar a cor de fundo*/
+    background: var(--preto);
+    font-family: Arial, Times, serif;
+    color: white;
+}
+
+header .container{
+  display:flex; /*coloca os itens em cima*/
+  flex-direction: row;
+  align-items: center; /*deixa os itens alinhados*/
+  justify-content: space-between; /*coloca espaço entre os itens*/
+}
+
+header .logo{
+  /*definindo a cor da logo pelo root*/
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', Arial, Times, serif;
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+header nav a{
+  /* formatando o estilo dos links do menu*/
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+
+}
+
+/* vai alterar a cor dos links quando passar o mouse por cima */
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    /* sempre usar mais de uma cor no gradient*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/hocus-capa.jpg');
+    height:500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #1C1C1C;
+    box-shadow: 5px 8px 18px 0 #fff;
+}
+
+.filme-principal .descricao{
+    /*distancia entre os botoes e a descrição*/
+    margin-bottom:90px;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.filme-principal .titulo{
+   margin-top:15%;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding:10px;
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    /* delay na transição de cor do botão*/
+    transition: .3s ease all;
+    margin: 5px;
+}
+
+.botao:hover{
+  /* muda cor do botão quando passar o mouse por cima */
+  background-color: white;
+  color:black;
+
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 10px;
+ 
+}
+
+
+/*não deixar o texto da descrição ocupar 100% da tela*/
+.filme-principal .container{
+  width: 70%;
+}
+
+.box-filme{
+  height:100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes{
+  margin-top: 5px;
+}
+
+
+
+
+
+
